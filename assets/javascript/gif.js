@@ -1,6 +1,5 @@
 var animals = ["dog", "cat", "lizard", "elephant"];
 
-// Function for displaying movie data
 function renderButtons() {
     for (var i = 0; i < animals.length; i++) {
         var a = $("<button>");
@@ -10,8 +9,6 @@ function renderButtons() {
         $("#animal-buttons").append(a);
     };
 
-
-    //animal buttons
     $(".animal").on("click", function (event) {
         var clickedAnimal = $(this).attr("data-name");
         console.log(clickedAnimal);

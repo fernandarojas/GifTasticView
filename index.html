@@ -2,16 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>GifTastic</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <meta charset="utf-8">
+    <title>GifTastic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <style> 
+
+    .btn { 
+        border-color: black;
+    }
+
+    .form-control { 
+        border-color: black;
+    }
+
+    #add-animal { 
+        background-color: black; 
+        color: white;
+    }
+    </style>
 </head>
 
 <body>
 
     <div class="container">
-    
         <div class="row">
             <div class="col-6-sm mx-auto mt-5">
                 <div id="animal-buttons"></div>
@@ -19,19 +33,22 @@
         </div>
 
         <div class="row">
-            <div class="col-6-sm mx-auto mt-4 form-group">
-                <form id="animal-form"> 
-                    <label for="animal-input">Add an Animal</label>
-                    <input type="text" id="animal-input">
-                    <input id="add-animal" type="submit" value="Add an Animal">
+            <div class="col-2-sm mx-auto mt-4">
+                <form class="form-inline">
+                    <div id="animal-form">
+                        <input type="text" id="animal-input" class="form-control">
+                    </div>
+                        <button class="ml-2 btn btn-default" id="add-animal" type="submit" value="Add an Animal">Add</button>
                 </form>
             </div>
         </div>
 
-        <!-- gifs will be dropped here -->
-        <div id="animals-view">
+        <div class="row">
+            <div class="col-6-sm mx-auto">
+                <div id="animals-view"></div>
+            </div>
         </div>
-
+    
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

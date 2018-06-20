@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GifTastic</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-6-sm mx-auto mt-5">
+                <div id="animal-buttons"></div>
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-6-sm mx-auto mt-4 form-group">
+                <form id="animal-form"> 
+                    <label for="animal-input">Add an Animal</label>
+                    <input type="text" id="animal-input">
+                    <input id="add-animal" type="submit" value="Add an Animal">
+                </form>
+            </div>
+        </div>
+
+        <!-- gifs will be dropped here -->
+        <div id="animals-view">
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/gif.js"></script>
+
+</body>
+</html>

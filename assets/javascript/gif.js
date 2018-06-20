@@ -1,4 +1,4 @@
-var animals = ["dog", "cat", "lizard", "elephant"];
+var animals = ["panda", "giraffe", "lizard", "elephant"];
 
 function renderButtons() {
     for (var i = 0; i < animals.length; i++) {
